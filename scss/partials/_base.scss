@@ -1,5 +1,5 @@
 body {
-  color: $gray;
+  color: $light-gray;
   font-family: $ff-qs;
   line-height: 1.6;
   background: $white;
@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-  @include sans-serif($fs: 2rem, $ls: 0.075em, $ff: $ff-kal);
+  @include font-mixin($fs: 2rem, $ls: 0.075em, $ff: $ff-kal);
 }
 
 .container-small {

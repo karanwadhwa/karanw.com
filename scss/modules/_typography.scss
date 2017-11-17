@@ -17,7 +17,7 @@ $fw-b: 900;
 
 $letter-spacing: 10px;
 
-@mixin sans-serif($fs, $ls: 0.3em, $color: $dark-gray, $lh: 1, $ff: $ff-ss){
+@mixin font-mixin($fs, $ls: 0.3em, $color: $dark-gray, $lh: 1, $ff: $ff-ss){
   font-size: $fs;
   letter-spacing: $ls;
   color: $color;

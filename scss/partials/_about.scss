@@ -1,0 +1,48 @@
+.about {
+  @include container;
+  @include clearfix;
+  margin-top: 2em !important;
+}
+.about-img {
+  max-height: 25em;
+  align-self: center;
+  @media (min-width: 45em) {
+    float: left;
+    margin-right: 1.5em;
+  }
+}
+
+.about-title {
+  @include font-mixin($fs: 3rem, $ls: 0.2em, $ff: $ff-ss, $color: $light-blue);
+  margin-bottom: 0.4em;
+  /* margin-left: -0.5em; */
+}
+
+.about-subtitle {
+  margin: 0.5em 0;
+}
+
+@supports (display: grid) {
+  .about {
+    display: grid;
+    grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
+    grid-template-rows:
+  }
+
+  .about-img {
+    grid-column: port-start/img-end;
+    grid-row: 1/2;
+  }
+
+  .about-title {
+    grid-column: name/port;
+    grid-row: 1/2;
+    align-self: end;
+
+  }
+
+  .about-subtitle,
+  .about-text {
+    grid-column: port/port;
+  }
+}
