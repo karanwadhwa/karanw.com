@@ -1,0 +1,43 @@
+body {
+  color: $gray;
+  font-family: $ff-qs;
+  line-height: 1.6;
+  background: $white;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,h2,p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+h1 {
+  color: $light-blue;
+  line-height: 1;
+  font-size: 3.125rem;
+}
+
+h2 {
+  @include sans-serif($fs: 2rem, $ls: 0.075em, $ff: $ff-kal);
+}
+
+.container-small {
+ /*  width: 90%; */
+  max-width: 45rem;
+  margin: 0 auto;
+  display: block;
+
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* (x, y)  => position */
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+}

@@ -1,0 +1,26 @@
+/* Merriweather + Six Caps */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps');
+/* Quicksand */
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+/* Permanent Marker + Kalam*/
+@import url('https://fonts.googleapis.com/css?family=Kalam:400,700|Permanent+Marker');
+
+$ff-s: 'Merriweather', serif;
+/* $ff-ss: 'Six Caps', sans-serif; */
+$ff-ss: 'Permanent Marker', cursive;
+$ff-qs: 'Quicksand', serif;
+$ff-kal: 'Kalam', cursive;
+
+
+$fw-n: 400;
+$fw-b: 900;
+
+$letter-spacing: 10px;
+
+@mixin sans-serif($fs, $ls: 0.3em, $color: $dark-gray, $lh: 1, $ff: $ff-ss){
+  font-size: $fs;
+  letter-spacing: $ls;
+  color: $color;
+  line-height: $lh;
+  font-family: $ff;
+}

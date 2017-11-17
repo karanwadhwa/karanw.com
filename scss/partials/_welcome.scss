@@ -1,0 +1,18 @@
+.welcome {
+  background: url('../img/header-bg.png');
+  height: 100vh;
+  display: block;
+  /* padding: 1em 0 2em; */
+
+}
+
+.titlebox {
+  display: inline-block;
+  font-size: 3.5rem;
+  font-family: $ff-qs;
+  font-weight: 300;
+  padding: .5em 1em;
+  outline: 3px solid $weird-green;
+  color: $dark-blue;
+  text-align: center;
+}
