@@ -463,7 +463,8 @@ h2 {
   width: 90%;
   margin: 0 auto;
   max-width: 70em;
-  margin-top: 2em !important; }
+  margin-top: 4em !important;
+  margin-bottom: 4em; }
   .about::after {
     content: '';
     display: block;
@@ -502,5 +503,51 @@ h2 {
     align-self: end; }
   .about-subtitle,
   .about-text {
-    grid-column: port/port;
-    grid-row: 1.5/2; } }
+    grid-column: port/port; } }
+
+.portfolio {
+  text-align: center;
+  background-color: #e8e9eb;
+  padding: 4em 0; }
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden; }
+  .portfolio-item img {
+    display: block; }
+  .portfolio-item figcaption {
+    position: absolute;
+    background: rgba(3, 175, 194, 0.5);
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em;
+    color: #FFFFFF;
+    text-align: left;
+    display: flex;
+    flex-direction: column; }
+  .portfolio-item:hover figcaption,
+  .portfolio-item:focus figcaption {
+    top: 0;
+    transition: ease-in-out 250ms; }
+
+.portfolio-title {
+  color: #FFFFFF;
+  font-size: 2.625rem;
+  align-self: top;
+  margin-bottom: auto; }
+
+.portfolio-link {
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 2px solid #FFFFFF;
+  align-self: flex-start; }
+  .portfolio-link::after {
+    content: url("../img/arrow-white.svg");
+    display: inline-block;
+    height: .8em;
+    width: .8em;
+    margin-left: .6em; }
