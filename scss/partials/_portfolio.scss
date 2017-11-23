@@ -3,13 +3,20 @@
   background-color: $gray;
   padding: 4em 0;
 }
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  @include container($max-width: 75em);
+}
 
 .portfolio-item {
   position: relative;
   overflow: hidden;
+  flex: 1 1 20rem;
 
   img {
     display: block;
+    width: 100%;
   }
 
   figcaption {
@@ -19,7 +26,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 2em;
+    padding: 1em;
     color: $white;
     text-align: left;
     display: flex;
@@ -35,9 +42,21 @@
 
 .portfolio-title {
   color: $white;
-  font-size: 2.625rem;
+  font-size: 2rem;
   align-self: top;
   margin-bottom: auto;
+
+  .featured & {
+    font-size: 3rem;
+  }
+}
+
+.portfolio-desc {
+  display: none;
+
+  .featured & {
+    display: block;
+  }
 }
 
 .portfolio-link {
@@ -54,5 +73,17 @@
     height: .8em;
     width: .8em;
     margin-left: .6em;
+  }
+}
+
+@supports (display: grid) {
+  .portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-item.featured {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
   }
 }
