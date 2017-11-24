@@ -1,6 +1,7 @@
 .intro {
   display: flex;
   color: rgba($white, 0.7);
+  background-color: $dark-blue;
 
   h2 {
     color: $white;
@@ -15,19 +16,20 @@
     }
   }
 
-  @supports (display: grid) {
+/*   @supports (display: grid) {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 50em) 1fr;
-  }
+  } */
 }
 
 .intro-middle {
+  @include container;
   background-color: $dark-blue;
   text-align: center;
   padding: 2.5em 5vw;
-  display: flex;
-  flex-direction: column;
+  display: block;
   justify-content: center;
+  width: 100%;
 }
 
 .intro-left img,
@@ -36,4 +38,5 @@
   min-height: 100%;
   min-width: 100%;
   display: block;
+  background: rgba($light-blue, 1);
 }
