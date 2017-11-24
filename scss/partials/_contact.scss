@@ -10,6 +10,31 @@
 form {
   display: flex;
   flex-direction: column;
+
+  @supports (display: grid) {
+    @include mq {
+      display: grid;
+      grid-column: 1fr 1fr;
+      grid-column-gap: 1em;
+      grid-template-areas:
+        "name    email"
+        "message message"
+        "   .    button";
+
+      .name {
+        grid-area: name;
+      }
+      .email {
+        grid-area: email;
+      }
+      .message {
+        grid-area: message;
+      }
+      .button {
+        grid-area: button;
+      }
+    }
+  }
 }
 
 label {
@@ -26,6 +51,10 @@ input, textarea {
   background: lighten($gray, 7%);
   border: 1px solid $gray;
   font-size: 1.2rem;
+}
+
+textarea {
+  resize: none;
 }
 
 .button {
