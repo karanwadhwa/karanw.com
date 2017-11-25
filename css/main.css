@@ -490,9 +490,10 @@ nav {
   .nav-is-open .menu-button {
     transform: translateX(-30%); }
 
-.container-all {
-  transition: transform ease-in-out 350ms; }
-
+/* .container-all {
+  transition: transform ease-in-out 350ms;
+}
+ */
 .menu-button:focus {
   outline: none; }
 
