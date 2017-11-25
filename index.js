@@ -1,3 +1,5 @@
+// Slider
+
 $('.sk-top').owlCarousel({
     loop:true,
     margin:10,
@@ -22,8 +24,8 @@ $('.sk-top').owlCarousel({
         autoplayTimeout: 3000
       }
     }
-  });
-  $('.sk-bottom').owlCarousel({
+});
+$('.sk-bottom').owlCarousel({
     loop:true,
     rtl: true,
     margin:10,
@@ -48,4 +50,12 @@ $('.sk-top').owlCarousel({
         autoplayTimeout: 3000
       }
     }
+});
+
+  // Nav
+
+  const navToggle = document.querySelector('.menu-button');
+
+  navToggle.addEventListener('click', () => {
+    document.body.classList.toggle('nav-is-open');
   });

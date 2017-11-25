@@ -21,6 +21,26 @@
     background: rgba($dark-blue, 0.5);
     display: block;
     margin: 0.7em auto;
+
+    @media (max-width: 420px) {
+      width: 20%;
+    }
+
+    @media (min-width: 420px) {
+      width: 17%
+    }
+
+    @media (min-width: 700px) {
+      width: 13%
+    }
+
+    @media (min-width: 900px) {
+      width: 10%
+    }
+
+    @media (min-width: 1050px) {
+      width: 6%
+    }
   }
 }
 
