@@ -10,8 +10,12 @@ $('.sk-top').owlCarousel({
         items:3
       },
       600:{
+        items:5,
+        autoplayTimeout: 1500
+      },
+      700:{
         items:6,
-        autoplayTimeout: 1800
+        autoplayTimeout: 2000
       },
       1000:{
         items:7,
@@ -32,8 +36,12 @@ $('.sk-top').owlCarousel({
         items:3
       },
       600:{
+        items:5,
+        autoplayTimeout: 1500
+      },
+      700:{
         items:6,
-        autoplayTimeout: 1800
+        autoplayTimeout: 2000
       },
       1000:{
         items:7,

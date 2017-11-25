@@ -628,9 +628,26 @@ h2 {
 
 .portfolio-title {
   color: #FFFFFF;
-  font-size: 2rem;
   align-self: top;
   margin-bottom: auto; }
+  @media (max-width: 370px) {
+    .portfolio-title {
+      font-size: 1rem; } }
+  @media (min-width: 370px) {
+    .portfolio-title {
+      font-size: 1.2rem; } }
+  @media (min-width: 420px) {
+    .portfolio-title {
+      font-size: 1.4rem; } }
+  @media (min-width: 550px) {
+    .portfolio-title {
+      font-size: 1.8rem; } }
+  @media (min-width: 720px) {
+    .portfolio-title {
+      font-size: 1.2rem; } }
+  @media (min-width: 1050px) {
+    .portfolio-title {
+      font-size: 1.8rem; } }
 
 .portfolio-desc {
   display: none; }
@@ -638,10 +655,19 @@ h2 {
 .portfolio-link {
   color: #FFFFFF;
   font-weight: 900;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-decoration: none;
   border-bottom: 2px solid #FFFFFF;
   align-self: flex-start; }
+  @media (max-width: 450px) {
+    .portfolio-link {
+      font-size: 0.8rem; } }
+  @media (min-width: 720px) {
+    .portfolio-link {
+      font-size: 1rem; } }
+  @media (min-width: 1000px) {
+    .portfolio-link {
+      font-size: 1.125rem; } }
   .portfolio-link::after {
     content: url("../img/arrow-white.svg");
     display: inline-block;
@@ -662,8 +688,29 @@ h2 {
     grid-row: 1 / span 2; }
   .featured .portfolio-title {
     font-size: 3rem; }
+    @media (max-width: 450px) {
+      .featured .portfolio-title {
+        font-size: 1.8rem; } }
+    @media (min-width: 450px) {
+      .featured .portfolio-title {
+        font-size: 2rem; } }
+    @media (min-width: 720px) {
+      .featured .portfolio-title {
+        font-size: 1.8rem; } }
+    @media (min-width: 900px) {
+      .featured .portfolio-title {
+        font-size: 3rem; } }
   .featured .portfolio-desc {
-    display: block; } }
+    display: block; }
+    @media (max-width: 450px) {
+      .featured .portfolio-desc {
+        font-size: 0.8rem; } }
+    @media (min-width: 720px) {
+      .featured .portfolio-desc {
+        font-size: 1rem; } }
+    @media (min-width: 1000px) {
+      .featured .portfolio-desc {
+        font-size: 1.125rem; } } }
 
 .contact {
   width: 90%;
