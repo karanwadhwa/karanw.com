@@ -1,0 +1,46 @@
+.skills {
+  background: $gray;
+}
+
+.skills-sub {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  width: 100%;
+
+  h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  &::after,
+  &::before {
+    content:'';
+    width: 5%;
+    height: 1px;
+    background: rgba($dark-blue, 0.5);
+    display: block;
+    margin: 0.7em auto;
+  }
+}
+
+.skills-icons {
+  @include container($max-width: 70em);
+  display: block;
+  /* justify-content: space-between; */
+/*   padding: 1.75em auto 2em; */
+  img {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+  }
+
+}
+
+.skills-icon {
+  max-width: 50%;
+}
+
+.skills-icon-svgporn {
+  max-width: 5%;
+}
